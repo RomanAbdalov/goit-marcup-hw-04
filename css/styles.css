@@ -32,8 +32,8 @@
  }
  img {
     display: block;
-    
- }
+    }
+
  button {
     cursor: pointer;
  }
@@ -129,15 +129,24 @@
         margin-left: auto;
         align-items: center;
     }
-    /* .site-tel::before {
+    .site-tel::before {
         content:"";
         width: 16px;
         height: 12px;
         margin-right: 10px;
-        background-image: url(../img/maill.jpg);
-        background-size: contain;
-        
-    } */
+        background-image: url(../img/maill.svg);
+        background-size: contain;  
+        background-repeat: no-repeat;
+    }
+    
+    /* ::before {
+        content:"";
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        background-image: url(../img/tell.svg);
+        background-size: contain; } */
+    
     .site-tel .item + .item {
         margin-left: 40px;
     }
@@ -259,7 +268,20 @@
         background-color: #F5F4FA;
     }
     .icon-delivery::before {
-        background-image: url(../img/Vector.png);
+        background-image: url(../img/antenna.svg);
+        background-size: 65.32px 70px;
+    }
+    .icon-clock::before {
+        background-image: url(../img/clock.svg);
+        background-size: 66.96px 70px;
+    }
+    .icon-comp::before {
+        background-image: url(../img/comp.svg);
+        background-size: 70px 53.69px;
+    }
+    .icon-astronaut::before {
+        background-image: url(../img/astronaut.svg);
+        background-size: 54.83px 60.66px;
     }
     .title {
         font-weight: 700;
@@ -332,6 +354,25 @@
         letter-spacing: 0.03em;
         color: var(--primery-text-color);
     }
+    .team-icon {
+        width: 20px;
+        height: 20px; 
+        margin-right: 10px;
+        margin-bottom: 30px;
+        /* margin-left: 32px; */
+         }
+         .team-icon:hover {
+            border-radius: 50%;
+            fill: var(--primary-bg-color);
+            background-color: var(--accent-text-color);
+         }
+         .team-icon.team-icon:first-child {
+            margin-left: 32px;
+         }
+         .team-icon.team-icon:last-child(4n) {
+            margin-right: 30px;
+         }
+
      /* ----------Footer----------- */
 .logo-footer {
     padding-bottom:  28px;
