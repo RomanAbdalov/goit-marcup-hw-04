@@ -143,7 +143,17 @@
 
     .site-nav .link:hover, 
     .site-nav .link:focus{
-        color:var(--accent-text-color);
+        color:var(--accent-text-color);  
+    }
+    .site-nav .link:hover:after {
+        position: absolute;
+
+        content: "";
+        display: flex;
+        background: #2196F3;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
     }
 
     .site-tel {
