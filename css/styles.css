@@ -78,7 +78,9 @@
     .main-nav {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid #ECECEC;
+    }
+    .header-border {
+    border-bottom: 1px solid #ECECEC;
     }
     .logo {
         color:var(--title-text-color);
